@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 with open("requirements.txt") as f:
-    install_requires = f.read().strip().split("\n")
+    install_requires = [l for l in f.read().splitlines() if l.strip() and not l.strip().startswith("#")]
 
 setup(
     name="wsapp",
