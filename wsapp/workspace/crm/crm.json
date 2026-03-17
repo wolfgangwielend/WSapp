@@ -1,0 +1,73 @@
+{
+ "charts": [],
+ "content": "[{\"id\": \"shortcuts\", \"type\": \"shortcut\"}, {\"id\": \"quick_lists\", \"type\": \"quick_list\"}]",
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "is_hidden": 0,
+ "label": "CRM",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Leads",
+   "link_to": "WS Lead",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customers",
+   "link_to": "WS Customer",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Opportunities",
+   "link_to": "WS Opportunity",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "CRM",
+ "owner": "Administrator",
+ "partial": 0,
+ "public": 1,
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Green",
+   "format": "{} Leads",
+   "label": "WS Lead",
+   "link_to": "WS Lead",
+   "stats_filter": "{ \"status\": \"Open\" }",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "format": "{} Customers",
+   "label": "WS Customer",
+   "link_to": "WS Customer",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "format": "{} Opportunities",
+   "label": "WS Opportunity",
+   "link_to": "WS Opportunity",
+   "stats_filter": "{ \"status\": \"Open\" }",
+   "type": "DocType"
+  }
+ ],
+ "title": "CRM"
+}

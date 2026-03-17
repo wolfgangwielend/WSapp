@@ -1,0 +1,73 @@
+version: "3"
+
+services:
+  # MariaDB Datenbank
+  db:
+    image: mariadb:10.6
+    container_name: wsapp-db
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_DATABASE: frappe
+      MYSQL_USER: frappe
+      MYSQL_PASSWORD: frappe
+    volumes:
+      - db-data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --skip-character-set-client-handshake
+      - --skip-innodb-read-only-compressed
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "--silent"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Redis Cache
+  redis-cache:
+    image: redis:7-alpine
+    container_name: wsapp-redis-cache
+
+  # Redis Queue
+  redis-queue:
+    image: redis:7-alpine
+    container_name: wsapp-redis-queue
+
+  # Frappe Backend
+  backend:
+    image: frappe/bench:latest
+    container_name: wsapp-backend
+    depends_on:
+      db:
+        condition: service_healthy
+      redis-cache:
+        condition: service_started
+      redis-queue:
+        condition: service_started
+    volumes:
+      - bench-data:/home/frappe/frappe-bench
+      - ./wsapp:/home/frappe/frappe-bench/apps/wsapp
+    environment:
+      - DB_HOST=db
+      - DB_PORT=3306
+      - REDIS_CACHE=redis-cache:6379
+      - REDIS_QUEUE=redis-queue:6379
+    ports:
+      - "8000:8000"
+      - "9000:9000"
+    command: >
+      bash -c "
+        bench new-site wsapp.localhost
+          --db-host db
+          --db-root-password 123
+          --admin-password admin
+          --no-mariadb-socket &&
+        bench --site wsapp.localhost install-app wsapp &&
+        bench serve --port 8000
+      "
+
+volumes:
+  db-data:
+  bench-data:

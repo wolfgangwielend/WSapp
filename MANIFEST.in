@@ -1,0 +1,2 @@
+include requirements.txt
+recursive-include wsapp *.json *.js *.css *.html *.csv *.txt *.md *.png *.svg
