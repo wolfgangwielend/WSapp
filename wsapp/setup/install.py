@@ -19,14 +19,4 @@ def create_default_roles():
 
 
 def create_default_data():
-    # Create default customer groups
-    groups = ["Commercial", "Individual", "Government"]
-    for group in groups:
-        if not frappe.db.exists("Customer Group", group):
-            frappe.get_doc({
-                "doctype": "Customer Group",
-                "customer_group_name": group,
-                "parent_customer_group": "All Customer Groups"
-            }).insert(ignore_permissions=True)
-
     frappe.db.commit()

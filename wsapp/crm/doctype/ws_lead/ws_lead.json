@@ -118,15 +118,13 @@
   },
   {
    "fieldname": "territory",
-   "fieldtype": "Link",
-   "label": "Territory",
-   "options": "Territory"
+   "fieldtype": "Data",
+   "label": "Region"
   },
   {
    "fieldname": "industry",
-   "fieldtype": "Link",
-   "label": "Industry",
-   "options": "Industry Type"
+   "fieldtype": "Data",
+   "label": "Branche"
   },
   {
    "fieldname": "section_break_notes",

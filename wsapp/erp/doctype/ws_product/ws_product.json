@@ -40,10 +40,9 @@
   },
   {
    "fieldname": "item_group",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Item Group",
-   "options": "WS Item Group"
+   "label": "Item Group"
   },
   {
    "fieldname": "column_break_1",
