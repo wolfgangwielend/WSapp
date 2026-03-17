@@ -1,111 +1,179 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:customer_name",
+ "autoname": "naming_series:",
  "creation": "2024-01-01 00:00:00.000000",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
+  "anrede",
+  "gehoert_zu",
+  "column_break_top",
+  "titel_davor",
+  "vorname",
+  "nachname",
+  "titel_danach",
   "customer_name",
-  "customer_type",
-  "customer_group",
-  "territory",
-  "column_break_1",
-  "status",
-  "lead_name",
-  "account_manager",
+  "section_break_address",
+  "strasse",
+  "column_break_address",
+  "plz",
+  "ort",
+  "land",
   "section_break_contact",
+  "telefon",
   "email_id",
-  "mobile_no",
-  "phone",
-  "column_break_contact",
+  "column_break_contact2",
+  "telefon_2",
+  "email_2",
   "website",
-  "address_line1",
-  "address_line2",
-  "city",
-  "country",
-  "section_break_notes",
-  "notes"
+  "section_break_finance",
+  "geburtsdatum",
+  "iban",
+  "column_break_finance",
+  "bic",
+  "zahlungsbedingungen",
+  "mwst_satz",
+  "section_break_type",
+  "ist_kunde",
+  "ist_lieferant",
+  "section_break_persons",
+  "ansprechpersonen",
+  "section_break_orders",
+  "auftraege",
+  "section_break_objects",
+  "objekte",
+  "section_break_notes_text",
+  "anmerkungen",
+  "tab_kommunikation",
+  "section_break_notizen",
+  "notizen",
+  "section_break_mails_an",
+  "mails_an",
+  "section_break_mails_cc",
+  "mails_cc",
+  "section_break_mails_bcc",
+  "mails_bcc"
  ],
  "fields": [
   {
-   "fieldname": "customer_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Customer Name",
-   "reqd": 1,
-   "unique": 1
+   "default": "KD-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "K.-Nr.",
+   "options": "KD-.#####",
+   "reqd": 1
   },
   {
-   "fieldname": "customer_type",
+   "fieldname": "anrede",
    "fieldtype": "Select",
    "in_list_view": 1,
-   "label": "Customer Type",
-   "options": "Company\nIndividual"
+   "label": "Anrede",
+   "options": "\nHerr\nFrau\nDivers\nFirma"
   },
   {
-   "fieldname": "customer_group",
+   "fieldname": "gehoert_zu",
    "fieldtype": "Link",
-   "label": "Customer Group",
-   "options": "Customer Group"
+   "label": "Gehört zu",
+   "options": "WS Customer"
   },
   {
-   "fieldname": "territory",
-   "fieldtype": "Link",
-   "label": "Territory",
-   "options": "Territory"
-  },
-  {
-   "fieldname": "column_break_1",
+   "fieldname": "column_break_top",
    "fieldtype": "Column Break"
   },
   {
-   "default": "Active",
-   "fieldname": "status",
-   "fieldtype": "Select",
+   "fieldname": "titel_davor",
+   "fieldtype": "Data",
+   "label": "Titel davor"
+  },
+  {
+   "fieldname": "vorname",
+   "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Status",
-   "options": "Active\nInactive\nBlocked"
+   "label": "Vorname"
   },
   {
-   "fieldname": "lead_name",
-   "fieldtype": "Link",
-   "label": "From Lead",
-   "options": "WS Lead"
+   "fieldname": "nachname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nachname"
   },
   {
-   "fieldname": "account_manager",
+   "fieldname": "titel_danach",
+   "fieldtype": "Data",
+   "label": "Titel danach"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Vollständiger Name"
+  },
+  {
+   "fieldname": "section_break_address",
+   "fieldtype": "Section Break",
+   "label": "Adresse"
+  },
+  {
+   "fieldname": "strasse",
+   "fieldtype": "Data",
+   "label": "Straße"
+  },
+  {
+   "fieldname": "column_break_address",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plz",
+   "fieldtype": "Data",
+   "label": "PLZ"
+  },
+  {
+   "fieldname": "ort",
+   "fieldtype": "Data",
+   "label": "Ort"
+  },
+  {
+   "default": "Austria",
+   "fieldname": "land",
    "fieldtype": "Link",
-   "label": "Account Manager",
-   "options": "User"
+   "label": "Land",
+   "options": "Country"
   },
   {
    "fieldname": "section_break_contact",
    "fieldtype": "Section Break",
-   "label": "Contact Information"
+   "label": "Kontaktdaten"
+  },
+  {
+   "fieldname": "telefon",
+   "fieldtype": "Data",
+   "label": "Telefon",
+   "options": "Phone"
   },
   {
    "fieldname": "email_id",
    "fieldtype": "Data",
-   "label": "Email",
+   "label": "E-Mail",
    "options": "Email"
   },
   {
-   "fieldname": "mobile_no",
-   "fieldtype": "Data",
-   "label": "Mobile",
-   "options": "Phone"
-  },
-  {
-   "fieldname": "phone",
-   "fieldtype": "Data",
-   "label": "Phone",
-   "options": "Phone"
-  },
-  {
-   "fieldname": "column_break_contact",
+   "fieldname": "column_break_contact2",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "telefon_2",
+   "fieldtype": "Data",
+   "label": "Telefon 2",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "email_2",
+   "fieldtype": "Data",
+   "label": "E-Mail 2",
+   "options": "Email"
   },
   {
    "fieldname": "website",
@@ -114,35 +182,151 @@
    "options": "URL"
   },
   {
-   "fieldname": "address_line1",
-   "fieldtype": "Data",
-   "label": "Address Line 1"
-  },
-  {
-   "fieldname": "address_line2",
-   "fieldtype": "Data",
-   "label": "Address Line 2"
-  },
-  {
-   "fieldname": "city",
-   "fieldtype": "Data",
-   "label": "City"
-  },
-  {
-   "fieldname": "country",
-   "fieldtype": "Link",
-   "label": "Country",
-   "options": "Country"
-  },
-  {
-   "fieldname": "section_break_notes",
+   "fieldname": "section_break_finance",
    "fieldtype": "Section Break",
-   "label": "Notes"
+   "label": "Finanzdaten"
   },
   {
-   "fieldname": "notes",
-   "fieldtype": "Text Editor",
-   "label": "Notes"
+   "fieldname": "geburtsdatum",
+   "fieldtype": "Date",
+   "label": "Geburtsdatum"
+  },
+  {
+   "fieldname": "iban",
+   "fieldtype": "Data",
+   "label": "IBAN"
+  },
+  {
+   "fieldname": "column_break_finance",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bic",
+   "fieldtype": "Data",
+   "label": "BIC"
+  },
+  {
+   "default": "Fällig nach Erhalt der Rechnung",
+   "fieldname": "zahlungsbedingungen",
+   "fieldtype": "Select",
+   "label": "Zahlungsbedingungen Standard",
+   "options": "Fällig nach Erhalt der Rechnung\n7 Tage netto\n14 Tage netto\n30 Tage netto\n14 Tage 2% Skonto / 30 Tage netto"
+  },
+  {
+   "default": "20% MWSt",
+   "fieldname": "mwst_satz",
+   "fieldtype": "Select",
+   "label": "MWSt",
+   "options": "20% MWSt\n10% MWSt\n0% MWSt\nsteuerbefreit"
+  },
+  {
+   "fieldname": "section_break_type",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "ist_kunde",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Kunde"
+  },
+  {
+   "fieldname": "ist_lieferant",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Lieferant"
+  },
+  {
+   "fieldname": "section_break_persons",
+   "fieldtype": "Section Break",
+   "label": "Ansprechpersonen"
+  },
+  {
+   "fieldname": "ansprechpersonen",
+   "fieldtype": "Table",
+   "label": "Ansprechpersonen",
+   "options": "WS Contact Person"
+  },
+  {
+   "fieldname": "section_break_orders",
+   "fieldtype": "Section Break",
+   "label": "Aufträge"
+  },
+  {
+   "fieldname": "auftraege",
+   "fieldtype": "Table",
+   "label": "Aufträge",
+   "options": "WS Auftrag Link"
+  },
+  {
+   "fieldname": "section_break_objects",
+   "fieldtype": "Section Break",
+   "label": "Objekte"
+  },
+  {
+   "fieldname": "objekte",
+   "fieldtype": "Table",
+   "label": "Objekte",
+   "options": "WS Object"
+  },
+  {
+   "fieldname": "section_break_notes_text",
+   "fieldtype": "Section Break",
+   "label": "Anmerkungen"
+  },
+  {
+   "fieldname": "anmerkungen",
+   "fieldtype": "Text",
+   "label": "Anmerkungen"
+  },
+  {
+   "fieldname": "tab_kommunikation",
+   "fieldtype": "Tab Break",
+   "label": "Kommunikation"
+  },
+  {
+   "fieldname": "section_break_notizen",
+   "fieldtype": "Section Break",
+   "label": "Notizen"
+  },
+  {
+   "fieldname": "notizen",
+   "fieldtype": "Table",
+   "label": "Notizen",
+   "options": "WS Note Entry"
+  },
+  {
+   "fieldname": "section_break_mails_an",
+   "fieldtype": "Section Break",
+   "label": "Mails an An-Empfänger"
+  },
+  {
+   "fieldname": "mails_an",
+   "fieldtype": "Table",
+   "label": "Mails an An-Empfänger",
+   "options": "WS Mail Log"
+  },
+  {
+   "fieldname": "section_break_mails_cc",
+   "fieldtype": "Section Break",
+   "label": "Mails als CC"
+  },
+  {
+   "fieldname": "mails_cc",
+   "fieldtype": "Table",
+   "label": "Mails als CC",
+   "options": "WS Mail Log"
+  },
+  {
+   "fieldname": "section_break_mails_bcc",
+   "fieldtype": "Section Break",
+   "label": "Mails als BCC"
+  },
+  {
+   "fieldname": "mails_bcc",
+   "fieldtype": "Table",
+   "label": "Mails als BCC",
+   "options": "WS Mail Log"
   }
  ],
  "links": [],
@@ -150,7 +334,7 @@
  "modified_by": "Administrator",
  "module": "CRM",
  "name": "WS Customer",
- "naming_rule": "By fieldname",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
@@ -180,5 +364,6 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "customer_name",
  "track_changes": 1
 }
