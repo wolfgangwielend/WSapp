@@ -11,17 +11,6 @@ app_license = "MIT"
 # ------------------
 # required_apps = []
 
-# Each item in the list will be shown as an app in the apps page
-add_to_apps_screen = [
-    {
-        "name": "wsapp",
-        "logo": "/assets/wsapp/images/logo.png",
-        "title": "WS App",
-        "route": "/wsapp",
-        "has_permission": "wsapp.api.permission.has_app_permission",
-    }
-]
-
 # Includes in <head>
 # ------------------
 # include_js = {"page" :  "public/js/file.js"}
