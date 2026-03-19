@@ -2,7 +2,7 @@ import frappe
 from frappe.model.document import Document
 
 
-class WSSalesOrder(Document):
+class Auftrag(Document):
     def validate(self):
         self.calculate_totals()
 

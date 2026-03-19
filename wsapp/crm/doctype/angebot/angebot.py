@@ -3,17 +3,17 @@ from frappe.model.document import Document
 
 
 @frappe.whitelist()
-def make_sales_order(angebot_name):
+def make_auftrag(angebot_name):
     angebot = frappe.get_doc("Angebot", angebot_name)
 
-    so = frappe.new_doc("Sales Order")
-    so.customer = angebot.kunde
-    so.transaction_date = frappe.utils.today()
-    so.terms = angebot.zahlungsbedingungen
-    so.angebot = angebot.name
+    auftrag = frappe.new_doc("Auftrag")
+    auftrag.customer = angebot.kunde
+    auftrag.transaction_date = frappe.utils.today()
+    auftrag.terms = angebot.zahlungsbedingungen
+    auftrag.angebot = angebot.name
 
     for pos in angebot.positionen:
-        so.append("items", {
+        auftrag.append("items", {
             "item_name": pos.bezeichnung,
             "qty": pos.menge or 1,
             "uom": pos.einheit,
@@ -24,14 +24,14 @@ def make_sales_order(angebot_name):
             "grand_total": pos.gesamtsumme or 0,
         })
 
-    so.total = angebot.nettosumme
-    so.tax_amount = angebot.mwst_betrag
-    so.grand_total = angebot.gesamtsumme
-    so.insert()
+    auftrag.total = angebot.nettosumme
+    auftrag.tax_amount = angebot.mwst_betrag
+    auftrag.grand_total = angebot.gesamtsumme
+    auftrag.insert()
 
     frappe.db.set_value("Angebot", angebot_name, "status", "Angenommen")
 
-    return so.name
+    return auftrag.name
 
 
 class Angebot(Document):

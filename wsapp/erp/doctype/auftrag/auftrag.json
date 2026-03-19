@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 0,
- "autoname": "WS-SO-.YYYY.-.#####",
+ "autoname": "WS-AUFT-.YYYY.-.#####",
  "creation": "2024-01-01 00:00:00.000000",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -94,7 +94,7 @@
    "fieldname": "items",
    "fieldtype": "Table",
    "label": "Items",
-   "options": "Sales Order Item",
+   "options": "Auftrag Item",
    "reqd": 1
   },
   {
@@ -149,8 +149,8 @@
  "modified": "2024-01-01 00:00:00.000000",
  "modified_by": "Administrator",
  "module": "ERP",
- "name": "Sales Order",
- "naming_rule": "Expression (old style)",
+ "name": "Auftrag",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

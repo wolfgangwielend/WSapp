@@ -6,7 +6,7 @@ frappe.ui.form.on('Angebot', {
 					__('Soll aus dem Angebot <b>{0}</b> ein neuer Auftrag erstellt werden?', [frm.doc.name]),
 					function () {
 						frappe.call({
-							method: 'wsapp.crm.doctype.angebot.angebot.make_sales_order',
+							method: 'wsapp.crm.doctype.angebot.angebot.make_auftrag',
 							args: { angebot_name: frm.doc.name },
 							freeze: true,
 							freeze_message: __('Auftrag wird erstellt...'),
@@ -16,7 +16,7 @@ frappe.ui.form.on('Angebot', {
 										message: __('Auftrag {0} wurde erstellt.', [r.message]),
 										indicator: 'green'
 									});
-									frappe.set_route('Form', 'Sales Order', r.message);
+									frappe.set_route('Form', 'Auftrag', r.message);
 								}
 							}
 						});

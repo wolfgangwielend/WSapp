@@ -16,7 +16,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Nr",
-   "options": "Sales Order"
+   "options": "Auftrag"
   },
   {
    "fieldname": "status",

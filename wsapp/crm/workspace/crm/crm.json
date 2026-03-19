@@ -60,7 +60,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Aufträge",
-   "link_to": "Sales Order",
+   "link_to": "Auftrag",
    "link_type": "DocType",
    "onboard": 1,
    "type": "Link"
@@ -109,8 +109,8 @@
   {
    "color": "Blue",
    "format": "{} Aufträge",
-   "label": "Sales Order",
-   "link_to": "Sales Order",
+   "label": "Auftrag",
+   "link_to": "Auftrag",
    "stats_filter": "{ \"status\": \"Confirmed\" }",
    "type": "DocType"
   }
