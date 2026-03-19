@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "WS-AUFG-.YYYY.-.#####",
+ "creation": "2026-03-19 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "titel",
+  "status",
+  "column_break_1",
+  "prioritaet",
+  "faelligkeitsdatum",
+  "section_break_zuweisung",
+  "zugewiesen_an",
+  "column_break_zuweisung",
+  "referenz_doctype",
+  "referenz_name",
+  "section_break_beschreibung",
+  "beschreibung"
+ ],
+ "fields": [
+  {
+   "fieldname": "titel",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Titel",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Offen\nIn Bearbeitung\nErledigt",
+   "default": "Offen",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prioritaet",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Priorität",
+   "options": "Niedrig\nMittel\nHoch",
+   "default": "Mittel"
+  },
+  {
+   "fieldname": "faelligkeitsdatum",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Fälligkeitsdatum"
+  },
+  {
+   "fieldname": "section_break_zuweisung",
+   "fieldtype": "Section Break",
+   "label": "Zuweisung & Verknüpfung"
+  },
+  {
+   "fieldname": "zugewiesen_an",
+   "fieldtype": "Link",
+   "label": "Zugewiesen an",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_zuweisung",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "referenz_doctype",
+   "fieldtype": "Link",
+   "label": "Verknüpft mit (Typ)",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "referenz_name",
+   "fieldtype": "Dynamic Link",
+   "label": "Verknüpft mit (Name)",
+   "options": "referenz_doctype"
+  },
+  {
+   "fieldname": "section_break_beschreibung",
+   "fieldtype": "Section Break",
+   "label": "Beschreibung"
+  },
+  {
+   "fieldname": "beschreibung",
+   "fieldtype": "Text Editor",
+   "label": "Beschreibung"
+  }
+ ],
+ "links": [],
+ "modified": "2026-03-19 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Aufgabe",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CRM User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CRM Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "faelligkeitsdatum",
+ "sort_order": "ASC",
+ "track_changes": 1
+}
