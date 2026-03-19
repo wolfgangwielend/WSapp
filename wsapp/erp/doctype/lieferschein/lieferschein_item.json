@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "creation": "2026-03-19 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bezeichnung",
+  "menge",
+  "einheit",
+  "column_break_1",
+  "gelieferte_menge",
+  "bemerkung"
+ ],
+ "fields": [
+  {
+   "fieldname": "bezeichnung",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bezeichnung",
+   "reqd": 1
+  },
+  {
+   "fieldname": "menge",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Menge",
+   "default": "1"
+  },
+  {
+   "fieldname": "einheit",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Einheit"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gelieferte_menge",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Gelieferte Menge",
+   "default": "0"
+  },
+  {
+   "fieldname": "bemerkung",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bemerkung"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-19 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "ERP",
+ "name": "Lieferschein Item",
+ "owner": "Administrator",
+ "permissions": []
+}

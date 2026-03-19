@@ -1,0 +1,222 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "WS-RE-.YYYY.-.#####",
+ "creation": "2026-03-19 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "kunde",
+  "rechnungsdatum",
+  "column_break_1",
+  "status",
+  "auftrag",
+  "lieferschein",
+  "section_break_details",
+  "faelligkeitsdatum",
+  "zahlungsbedingungen",
+  "column_break_details",
+  "bearbeiter",
+  "kostenstelle",
+  "section_break_items",
+  "items",
+  "section_break_summen",
+  "nettosumme",
+  "rabatt_gesamt",
+  "column_break_summen",
+  "mwst_betrag",
+  "gesamtsumme",
+  "section_break_zahlung",
+  "bezahlt_am",
+  "zahlungsart",
+  "section_break_notes",
+  "notizen"
+ ],
+ "fields": [
+  {
+   "fieldname": "kunde",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Kunde",
+   "options": "Kontakt",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rechnungsdatum",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Rechnungsdatum",
+   "default": "Today",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Entwurf",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Entwurf\nVersendet\nTeilbezahlt\nBezahlt\nÜberfällig\nStorniert"
+  },
+  {
+   "fieldname": "auftrag",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Auftrag",
+   "options": "Auftrag",
+   "read_only": 1
+  },
+  {
+   "fieldname": "lieferschein",
+   "fieldtype": "Link",
+   "label": "Lieferschein",
+   "options": "Lieferschein",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_details",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "faelligkeitsdatum",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Fälligkeitsdatum"
+  },
+  {
+   "fieldname": "zahlungsbedingungen",
+   "fieldtype": "Select",
+   "label": "Zahlungsbedingungen",
+   "options": "\nSofort fällig\n14 Tage netto\n30 Tage netto\n14 Tage 2% Skonto, 30 Tage netto\n30 Tage 2% Skonto, 60 Tage netto"
+  },
+  {
+   "fieldname": "column_break_details",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bearbeiter",
+   "fieldtype": "Link",
+   "label": "Bearbeiter",
+   "options": "User"
+  },
+  {
+   "fieldname": "kostenstelle",
+   "fieldtype": "Data",
+   "label": "Kostenstelle"
+  },
+  {
+   "fieldname": "section_break_items",
+   "fieldtype": "Section Break",
+   "label": "Rechnungspositionen"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Positionen",
+   "options": "Rechnung Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_summen",
+   "fieldtype": "Section Break",
+   "label": "Summen"
+  },
+  {
+   "fieldname": "nettosumme",
+   "fieldtype": "Currency",
+   "label": "Nettosumme",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rabatt_gesamt",
+   "fieldtype": "Currency",
+   "label": "Rabatt gesamt",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_summen",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mwst_betrag",
+   "fieldtype": "Currency",
+   "label": "MwSt. Betrag",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gesamtsumme",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Gesamtsumme (brutto)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_zahlung",
+   "fieldtype": "Section Break",
+   "label": "Zahlung"
+  },
+  {
+   "fieldname": "bezahlt_am",
+   "fieldtype": "Date",
+   "label": "Bezahlt am"
+  },
+  {
+   "fieldname": "zahlungsart",
+   "fieldtype": "Select",
+   "label": "Zahlungsart",
+   "options": "\nÜberweisung\nBar\nKreditkarte\nLastschrift\nPayPal"
+  },
+  {
+   "fieldname": "section_break_notes",
+   "fieldtype": "Section Break",
+   "label": "Notizen"
+  },
+  {
+   "fieldname": "notizen",
+   "fieldtype": "Text Editor",
+   "label": "Notizen"
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-03-19 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "ERP",
+ "name": "Rechnung",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ERP Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ERP User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "rechnungsdatum",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

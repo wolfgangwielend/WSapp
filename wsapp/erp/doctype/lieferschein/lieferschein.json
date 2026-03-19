@@ -1,0 +1,153 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "WS-LS-.YYYY.-.#####",
+ "creation": "2026-03-19 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "kunde",
+  "datum",
+  "column_break_1",
+  "status",
+  "auftrag",
+  "section_break_lieferung",
+  "lieferdatum",
+  "lieferadresse",
+  "column_break_lieferung",
+  "versandart",
+  "tracking_nr",
+  "section_break_items",
+  "items",
+  "section_break_notes",
+  "notizen"
+ ],
+ "fields": [
+  {
+   "fieldname": "kunde",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Kunde",
+   "options": "Kontakt",
+   "reqd": 1
+  },
+  {
+   "fieldname": "datum",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Datum",
+   "default": "Today",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Entwurf",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Entwurf\nBestätigt\nGeliefert\nStorniert"
+  },
+  {
+   "fieldname": "auftrag",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Auftrag",
+   "options": "Auftrag",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_lieferung",
+   "fieldtype": "Section Break",
+   "label": "Lieferung"
+  },
+  {
+   "fieldname": "lieferdatum",
+   "fieldtype": "Date",
+   "label": "Lieferdatum"
+  },
+  {
+   "fieldname": "lieferadresse",
+   "fieldtype": "Text",
+   "label": "Lieferadresse"
+  },
+  {
+   "fieldname": "column_break_lieferung",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "versandart",
+   "fieldtype": "Select",
+   "label": "Versandart",
+   "options": "\nPost\nDHL\nDPD\nUPS\nFedEx\nAbholung"
+  },
+  {
+   "fieldname": "tracking_nr",
+   "fieldtype": "Data",
+   "label": "Tracking-Nr."
+  },
+  {
+   "fieldname": "section_break_items",
+   "fieldtype": "Section Break",
+   "label": "Positionen"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Positionen",
+   "options": "Lieferschein Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_notes",
+   "fieldtype": "Section Break",
+   "label": "Notizen"
+  },
+  {
+   "fieldname": "notizen",
+   "fieldtype": "Text Editor",
+   "label": "Notizen"
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-03-19 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "ERP",
+ "name": "Lieferschein",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ERP Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ERP User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "datum",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
