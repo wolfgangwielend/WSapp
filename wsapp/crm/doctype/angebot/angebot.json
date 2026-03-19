@@ -1,0 +1,181 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "WS-ANG-.YYYY.-.#####",
+ "creation": "2026-03-19 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "angebotstitel",
+  "angebotsnummer",
+  "column_break_1",
+  "status",
+  "datum",
+  "section_break_kunde",
+  "kunde",
+  "bearbeiter",
+  "column_break_kunde",
+  "zahlungsbedingungen",
+  "textvorlage",
+  "section_break_positionen",
+  "positionen",
+  "section_break_summen",
+  "nettosumme",
+  "rabatt_gesamt",
+  "column_break_summen",
+  "mwst_betrag",
+  "gesamtsumme"
+ ],
+ "fields": [
+  {
+   "fieldname": "angebotstitel",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Angebotstitel",
+   "reqd": 1
+  },
+  {
+   "fieldname": "angebotsnummer",
+   "fieldtype": "Data",
+   "label": "Angebotsnummer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Entwurf\nVersendet\nAngenommen\nAbgelehnt\nAbgelaufen",
+   "default": "Entwurf",
+   "reqd": 1
+  },
+  {
+   "fieldname": "datum",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Datum",
+   "default": "Today"
+  },
+  {
+   "fieldname": "section_break_kunde",
+   "fieldtype": "Section Break",
+   "label": "Kunde & Bearbeitung"
+  },
+  {
+   "fieldname": "kunde",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Kunde",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bearbeiter",
+   "fieldtype": "Link",
+   "label": "Bearbeiter",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_kunde",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "zahlungsbedingungen",
+   "fieldtype": "Select",
+   "label": "Zahlungsbedingungen",
+   "options": "\nSofort fällig\n14 Tage netto\n30 Tage netto\n14 Tage 2% Skonto, 30 Tage netto\n30 Tage 2% Skonto, 60 Tage netto"
+  },
+  {
+   "fieldname": "textvorlage",
+   "fieldtype": "Select",
+   "label": "Textvorlage",
+   "options": "\nStandard\nFreundlich\nFormal\nFolgeangebot"
+  },
+  {
+   "fieldname": "section_break_positionen",
+   "fieldtype": "Section Break",
+   "label": "Angebotspositionen"
+  },
+  {
+   "fieldname": "positionen",
+   "fieldtype": "Table",
+   "label": "Positionen",
+   "options": "Angebotsposition"
+  },
+  {
+   "fieldname": "section_break_summen",
+   "fieldtype": "Section Break",
+   "label": "Summen"
+  },
+  {
+   "fieldname": "nettosumme",
+   "fieldtype": "Currency",
+   "label": "Nettosumme",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rabatt_gesamt",
+   "fieldtype": "Currency",
+   "label": "Rabatt gesamt",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_summen",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mwst_betrag",
+   "fieldtype": "Currency",
+   "label": "MwSt. Betrag",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gesamtsumme",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Gesamtsumme (brutto)",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "modified": "2026-03-19 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Angebot",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CRM User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CRM Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "datum",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
