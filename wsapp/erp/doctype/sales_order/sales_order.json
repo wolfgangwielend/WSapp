@@ -12,6 +12,7 @@
   "delivery_date",
   "column_break_1",
   "status",
+  "angebot",
   "opportunity",
   "currency",
   "conversion_rate",
@@ -57,6 +58,13 @@
    "in_list_view": 1,
    "label": "Status",
    "options": "Draft\nConfirmed\nDelivered\nCancelled"
+  },
+  {
+   "fieldname": "angebot",
+   "fieldtype": "Link",
+   "label": "Angebot",
+   "options": "Angebot",
+   "read_only": 1
   },
   {
    "fieldname": "opportunity",
