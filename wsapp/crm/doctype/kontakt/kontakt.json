@@ -78,7 +78,7 @@
    "fieldname": "gehoert_zu",
    "fieldtype": "Link",
    "label": "Gehört zu",
-   "options": "WS Kontakt"
+   "options": "Kontakt"
   },
   {
    "fieldname": "column_break_top",
@@ -253,7 +253,7 @@
    "fieldname": "ansprechpersonen",
    "fieldtype": "Table",
    "label": "Ansprechpersonen",
-   "options": "WS Contact Person"
+   "options": "Contact Person"
   },
   {
    "fieldname": "section_break_orders",
@@ -264,7 +264,7 @@
    "fieldname": "auftraege",
    "fieldtype": "Table",
    "label": "Aufträge",
-   "options": "WS Auftrag Link"
+   "options": "Auftrag Link"
   },
   {
    "fieldname": "section_break_objects",
@@ -275,7 +275,7 @@
    "fieldname": "objekte",
    "fieldtype": "Table",
    "label": "Objekte",
-   "options": "WS Object"
+   "options": "Objekt"
   },
   {
    "fieldname": "section_break_notes_text",
@@ -301,7 +301,7 @@
    "fieldname": "notizen",
    "fieldtype": "Table",
    "label": "Notizen",
-   "options": "WS Note Entry"
+   "options": "Note Entry"
   },
   {
    "fieldname": "section_break_mails_an",
@@ -312,7 +312,7 @@
    "fieldname": "mails_an",
    "fieldtype": "Table",
    "label": "Mails an An-Empfänger",
-   "options": "WS Mail Log"
+   "options": "Mail Log"
   },
   {
    "fieldname": "section_break_mails_cc",
@@ -323,7 +323,7 @@
    "fieldname": "mails_cc",
    "fieldtype": "Table",
    "label": "Mails als CC",
-   "options": "WS Mail Log"
+   "options": "Mail Log"
   },
   {
    "fieldname": "section_break_mails_bcc",
@@ -334,14 +334,14 @@
    "fieldname": "mails_bcc",
    "fieldtype": "Table",
    "label": "Mails als BCC",
-   "options": "WS Mail Log"
+   "options": "Mail Log"
   }
  ],
  "links": [],
  "modified": "2024-01-01 00:00:00.000000",
  "modified_by": "Administrator",
  "module": "CRM",
- "name": "WS Kontakt",
+ "name": "Kontakt",
  "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [

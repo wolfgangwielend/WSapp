@@ -12,7 +12,7 @@ def check_overdue_opportunities():
     from frappe.utils import today
 
     overdue = frappe.get_all(
-        "WS Opportunity",
+        "Opportunity",
         filters={
             "status": "Open",
             "expected_closing": ["<", today()],

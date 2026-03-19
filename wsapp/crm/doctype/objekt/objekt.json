@@ -5,27 +5,15 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "datetime",
-  "contact",
-  "note_text"
+  "object_name"
  ],
  "fields": [
   {
-   "fieldname": "datetime",
-   "fieldtype": "Datetime",
-   "in_list_view": 1,
-   "label": "Datum Uhrzeit"
-  },
-  {
-   "fieldname": "contact",
+   "fieldname": "object_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Kontakt"
-  },
-  {
-   "fieldname": "note_text",
-   "fieldtype": "Text",
-   "label": "Notiz"
+   "label": "Objektname",
+   "reqd": 1
   }
  ],
  "istable": 1,
@@ -33,10 +21,10 @@
  "modified": "2024-01-01 00:00:00.000000",
  "modified_by": "Administrator",
  "module": "CRM",
- "name": "WS Note Entry",
+ "name": "Objekt",
  "owner": "Administrator",
  "permissions": [],
- "sort_field": "datetime",
+ "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
 }

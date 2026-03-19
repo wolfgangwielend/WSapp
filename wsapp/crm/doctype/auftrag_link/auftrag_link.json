@@ -16,7 +16,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Nr",
-   "options": "WS Sales Order"
+   "options": "Sales Order"
   },
   {
    "fieldname": "status",
@@ -46,7 +46,7 @@
  "modified": "2024-01-01 00:00:00.000000",
  "modified_by": "Administrator",
  "module": "CRM",
- "name": "WS Auftrag Link",
+ "name": "Auftrag Link",
  "owner": "Administrator",
  "permissions": [],
  "sort_field": "modified",

@@ -18,7 +18,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Leads",
-   "link_to": "WS Lead",
+   "link_to": "Lead",
    "link_type": "DocType",
    "onboard": 1,
    "type": "Link"
@@ -27,7 +27,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Kontakte",
-   "link_to": "WS Kontakt",
+   "link_to": "Kontakt",
    "link_type": "DocType",
    "onboard": 1,
    "type": "Link"
@@ -36,7 +36,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Opportunities",
-   "link_to": "WS Opportunity",
+   "link_to": "Opportunity",
    "link_type": "DocType",
    "onboard": 1,
    "type": "Link"
@@ -51,7 +51,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Produkte",
-   "link_to": "WS Product",
+   "link_to": "Product",
    "link_type": "DocType",
    "onboard": 1,
    "type": "Link"
@@ -60,7 +60,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Aufträge",
-   "link_to": "WS Sales Order",
+   "link_to": "Sales Order",
    "link_type": "DocType",
    "onboard": 1,
    "type": "Link"
@@ -79,38 +79,38 @@
   {
    "color": "Green",
    "format": "{} Leads",
-   "label": "WS Lead",
-   "link_to": "WS Lead",
+   "label": "Lead",
+   "link_to": "Lead",
    "stats_filter": "{ \"status\": \"Open\" }",
    "type": "DocType"
   },
   {
    "color": "Blue",
    "format": "{} Kontakte",
-   "label": "WS Kontakt",
-   "link_to": "WS Kontakt",
+   "label": "Kontakt",
+   "link_to": "Kontakt",
    "type": "DocType"
   },
   {
    "color": "Orange",
    "format": "{} Opportunities",
-   "label": "WS Opportunity",
-   "link_to": "WS Opportunity",
+   "label": "Opportunity",
+   "link_to": "Opportunity",
    "stats_filter": "{ \"status\": \"Open\" }",
    "type": "DocType"
   },
   {
    "color": "Purple",
    "format": "{} Produkte",
-   "label": "WS Product",
-   "link_to": "WS Product",
+   "label": "Product",
+   "link_to": "Product",
    "type": "DocType"
   },
   {
    "color": "Blue",
    "format": "{} Aufträge",
-   "label": "WS Sales Order",
-   "link_to": "WS Sales Order",
+   "label": "Sales Order",
+   "link_to": "Sales Order",
    "stats_filter": "{ \"status\": \"Confirmed\" }",
    "type": "DocType"
   }

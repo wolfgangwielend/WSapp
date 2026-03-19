@@ -28,7 +28,7 @@
  "modified": "2024-01-01 00:00:00.000000",
  "modified_by": "Administrator",
  "module": "CRM",
- "name": "WS Contact Person",
+ "name": "Contact Person",
  "owner": "Administrator",
  "permissions": [],
  "sort_field": "modified",
