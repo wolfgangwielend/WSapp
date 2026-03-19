@@ -1,0 +1,239 @@
+{
+ "charts": [],
+ "content": "[{\"id\": \"shortcuts\", \"type\": \"shortcut\"}, {\"id\": \"quick_lists\", \"type\": \"quick_list\"}]",
+ "creation": "2024-01-01 00:00:00.000000",
+ "app": "wsapp",
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "is_hidden": 0,
+ "label": "Einstellungen",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Grundeinstellungen",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "WS Einstellungen",
+   "link_to": "WS Einstellungen",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Personal & Ressourcen",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Abwesenheitsgründe",
+   "link_to": "Abwesenheitsgrund",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Arbeitszeitregeln",
+   "link_to": "Arbeitszeitregel",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Ressourcen",
+   "link_to": "Ressource",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Teams",
+   "link_to": "Team",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Artikel & Produkte",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Artikeltypen",
+   "link_to": "Artikeltyp",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Positionsarten",
+   "link_to": "Positionsart",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Förderprogramme",
+   "link_to": "Förderprogramm",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Netzbetreiber",
+   "link_to": "Netzbetreiber",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Aufträge & Projekte",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Auftragskategorien",
+   "link_to": "Auftragskategorie",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Tätigkeiten",
+   "link_to": "Tätigkeit",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Terminarten",
+   "link_to": "Terminart",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Aufgabenvorlagen",
+   "link_to": "Aufgabenvorlage",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Meilensteinvorlagen",
+   "link_to": "Meilensteinvorlage",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "CRM",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Kontaktgruppen",
+   "link_to": "Kontaktgruppe",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Dokumenttypen",
+   "link_to": "Dokumenttyp",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Finanzen",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Mahnstufen",
+   "link_to": "Mahnstufe",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Zeitkorrekturarten",
+   "link_to": "Zeitkorrekturart",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vorlagen",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Textvorlagen",
+   "link_to": "Textvorlage",
+   "link_type": "DocType",
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Setup",
+ "name": "Einstellungen",
+ "owner": "Administrator",
+ "partial": 0,
+ "public": 1,
+ "roles": [],
+ "sequence_id": 10.0,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "label": "WS Einstellungen",
+   "link_to": "WS Einstellungen",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "format": "{} Mahnstufen",
+   "label": "Mahnstufe",
+   "link_to": "Mahnstufe",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "format": "{} Textvorlagen",
+   "label": "Textvorlage",
+   "link_to": "Textvorlage",
+   "type": "DocType"
+  }
+ ],
+ "title": "Einstellungen"
+}

@@ -92,4 +92,5 @@ scheduler_events = {
 # --------
 fixtures = [
     {"dt": "Role", "filters": [["name", "in", ["CRM User", "CRM Manager", "ERP User", "ERP Manager"]]]},
+    {"dt": "Workspace", "filters": [["app", "=", "wsapp"]]},
 ]
