@@ -6,8 +6,14 @@
  "doctype": "Workspace",
  "hide_custom": 0,
  "is_hidden": 0,
- "label": "CRM",
+ "label": "WSApp",
  "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "CRM",
+   "type": "Card Break"
+  },
   {
    "hidden": 0,
    "is_query_report": 0,
@@ -20,7 +26,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Customers",
+   "label": "Kunden",
    "link_to": "WS Customer",
    "link_type": "DocType",
    "onboard": 1,
@@ -34,12 +40,36 @@
    "link_type": "DocType",
    "onboard": 1,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "ERP",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Produkte",
+   "link_to": "WS Product",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Aufträge",
+   "link_to": "WS Sales Order",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
   }
  ],
  "modified": "2024-01-01 00:00:00.000000",
  "modified_by": "Administrator",
  "module": "CRM",
- "name": "CRM",
+ "name": "WSApp",
  "owner": "Administrator",
  "partial": 0,
  "public": 1,
@@ -56,7 +86,7 @@
   },
   {
    "color": "Blue",
-   "format": "{} Customers",
+   "format": "{} Kunden",
    "label": "WS Customer",
    "link_to": "WS Customer",
    "type": "DocType"
@@ -68,7 +98,22 @@
    "link_to": "WS Opportunity",
    "stats_filter": "{ \"status\": \"Open\" }",
    "type": "DocType"
+  },
+  {
+   "color": "Purple",
+   "format": "{} Produkte",
+   "label": "WS Product",
+   "link_to": "WS Product",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "format": "{} Aufträge",
+   "label": "WS Sales Order",
+   "link_to": "WS Sales Order",
+   "stats_filter": "{ \"status\": \"Confirmed\" }",
+   "type": "DocType"
   }
  ],
- "title": "CRM"
+ "title": "WSApp"
 }
