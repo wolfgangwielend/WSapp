@@ -26,8 +26,8 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Kunden",
-   "link_to": "WS Customer",
+   "label": "Kontakte",
+   "link_to": "WS Kontakt",
    "link_type": "DocType",
    "onboard": 1,
    "type": "Link"
@@ -86,9 +86,9 @@
   },
   {
    "color": "Blue",
-   "format": "{} Kunden",
-   "label": "WS Customer",
-   "link_to": "WS Customer",
+   "format": "{} Kontakte",
+   "label": "WS Kontakt",
+   "link_to": "WS Kontakt",
    "type": "DocType"
   },
   {

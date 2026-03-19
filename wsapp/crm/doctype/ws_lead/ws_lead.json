@@ -79,8 +79,8 @@
   {
    "fieldname": "customer",
    "fieldtype": "Link",
-   "label": "Customer (Converted)",
-   "options": "WS Customer",
+   "label": "Kontakt (konvertiert)",
+   "options": "WS Kontakt",
    "read_only": 1
   },
   {

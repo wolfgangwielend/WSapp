@@ -34,8 +34,8 @@
    "fieldname": "customer",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Customer",
-   "options": "WS Customer"
+   "label": "Kontakt",
+   "options": "WS Kontakt"
   },
   {
    "fieldname": "lead",

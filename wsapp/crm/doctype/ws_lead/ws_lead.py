@@ -25,9 +25,8 @@ class WSLead(Document):
         if self.status == "Converted":
             frappe.throw(frappe._("Lead is already converted to Customer"))
 
-        customer = frappe.new_doc("WS Customer")
-        customer.customer_name = self.company_name or self.full_name
-        customer.customer_type = "Company" if self.company_name else "Individual"
+        customer = frappe.new_doc("WS Kontakt")
+        customer.kontakt_name = self.company_name or self.full_name
         customer.email_id = self.email_id
         customer.mobile_no = self.mobile_no
         customer.phone = self.phone

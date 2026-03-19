@@ -2,11 +2,11 @@ import frappe
 from frappe.model.document import Document
 
 
-class WSCustomer(Document):
+class WSKontakt(Document):
     def before_save(self):
-        self.set_customer_name()
+        self.set_kontakt_name()
 
-    def set_customer_name(self):
+    def set_kontakt_name(self):
         parts = []
         if self.titel_davor:
             parts.append(self.titel_davor)
@@ -17,9 +17,9 @@ class WSCustomer(Document):
         if self.titel_danach:
             parts.append(self.titel_danach)
         if parts:
-            self.customer_name = " ".join(parts)
-        elif not self.customer_name:
-            self.customer_name = self.name
+            self.kontakt_name = " ".join(parts)
+        elif not self.kontakt_name:
+            self.kontakt_name = self.name
 
     def validate(self):
         self.validate_email()

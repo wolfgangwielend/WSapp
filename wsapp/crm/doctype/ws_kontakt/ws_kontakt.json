@@ -15,7 +15,7 @@
   "vorname",
   "nachname",
   "titel_danach",
-  "customer_name",
+  "kontakt_name",
   "section_break_address",
   "strasse",
   "column_break_address",
@@ -39,6 +39,7 @@
   "section_break_type",
   "ist_kunde",
   "ist_lieferant",
+  "ist_sonstiges",
   "section_break_persons",
   "ansprechpersonen",
   "section_break_orders",
@@ -59,11 +60,11 @@
  ],
  "fields": [
   {
-   "default": "KD-.#####",
+   "default": "KT-.#####",
    "fieldname": "naming_series",
    "fieldtype": "Select",
-   "label": "K.-Nr.",
-   "options": "KD-.#####",
+   "label": "Nr.",
+   "options": "KT-.#####\nKD-.#####",
    "reqd": 1
   },
   {
@@ -77,7 +78,7 @@
    "fieldname": "gehoert_zu",
    "fieldtype": "Link",
    "label": "Gehört zu",
-   "options": "WS Customer"
+   "options": "WS Kontakt"
   },
   {
    "fieldname": "column_break_top",
@@ -106,7 +107,7 @@
    "label": "Titel danach"
   },
   {
-   "fieldname": "customer_name",
+   "fieldname": "kontakt_name",
    "fieldtype": "Data",
    "hidden": 1,
    "label": "Vollständiger Name"
@@ -221,7 +222,8 @@
   },
   {
    "fieldname": "section_break_type",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Typ"
   },
   {
    "default": "1",
@@ -235,6 +237,12 @@
    "fieldtype": "Check",
    "in_list_view": 1,
    "label": "Lieferant"
+  },
+  {
+   "fieldname": "ist_sonstiges",
+   "fieldtype": "Check",
+   "in_list_view": 0,
+   "label": "Sonstiges"
   },
   {
    "fieldname": "section_break_persons",
@@ -333,7 +341,7 @@
  "modified": "2024-01-01 00:00:00.000000",
  "modified_by": "Administrator",
  "module": "CRM",
- "name": "WS Customer",
+ "name": "WS Kontakt",
  "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
@@ -364,6 +372,6 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "customer_name",
+ "title_field": "kontakt_name",
  "track_changes": 1
 }
