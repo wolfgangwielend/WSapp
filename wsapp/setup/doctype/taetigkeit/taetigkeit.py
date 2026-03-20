@@ -5,5 +5,5 @@ import frappe
 from frappe.model.document import Document
 
 
-class Tätigkeit(Document):
+class Taetigkeit(Document):
 	pass

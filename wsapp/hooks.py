@@ -2,6 +2,15 @@ from . import __version__ as app_version
 
 app_name = "wsapp"
 app_title = "WS App"
+
+add_to_apps_screen = [
+    {
+        "name": "wsapp",
+        "logo": "/assets/wsapp/images/logo.png",
+        "title": "WS App",
+        "route": "/desk",
+    }
+]
 app_publisher = "Your Company"
 app_description = "ERP/CRM System based on Frappe Framework"
 app_email = "your@email.com"
@@ -20,6 +29,12 @@ app_license = "MIT"
 # Home Pages
 # ----------
 home_page = "login"
+
+# Redirects
+# ---------
+website_redirects = [
+    {"source": "/wsapp", "target": "/desk/wsapp"},
+]
 
 # Generators
 # ----------
